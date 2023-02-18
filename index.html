@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+    <form id="formulario">
+      <fieldset>
+        <div class="fieldset-wapper">
+          <legend> Informações pessoais</legend>
+          <div class="input-wapper">
+            <div class="input-secundario">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" required>
+            </div>
+            <div class="input-secundario">
+              <label for="Sobrenome">Sobrenome</label>
+              <input type="text" id="Sobrenome" required>
+            </div>
+          </div>
+          <div class="input-secundario">
+            <label for="info-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="info-email" required>
+          </div>
+          <div class="input-secundario">
+            <label for="info-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="info-password" required minlength="6">
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wapper">
+          <legend>Informações do mentor</legend>
+          <div class="input-secundario">
+            <label for="nome-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="nome-mentor" required>
+          </div>
+        </div>
+      </fieldset> 
+
+      <fieldset>
+        <div class="fieldset-wapper">
+          <legend>Seus horários disponíveis</legend>
+          <div class="input-secundario">
+            <section>
+              <h2>Primeira mentoria</h2>
+              <div class="grupo-secundario">
+                <div class="esquerda">
+                  <div class="input-secundario">
+                      <label for="date-primery">Data <span>(DD/MM/AAAA)</span></label>
+                      <input type="date" id="date-primery" required>
+                  </div>
+                </div>
+                <div class="direita">
+                  <div class="input-secundario">
+                    <label for="event-begin">Das</label>
+                    <input type="time" id="event-begin" required>
+                  </div>
+                  <div class="input-secundario">
+                    <label for="event-end">Até</label>
+                    <input type="time" id="event-end" required>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <section>
+              <h2>Segunda mentoria</h2>
+              <div class="grupo-secundario">
+                <div class="esquerda">
+                  <div class="input-secundario">
+                      <label for="date-primery">Data <span>(DD/MM/AAAA)</span></label>
+                      <input type="date" id="date-primery" required>
+                  </div>
+                </div>
+                <div class="direita">
+                  <div class="input-secundario">
+                    <label for="event-begin">Das</label>
+                    <input type="time" id="event-begin" required>
+                  </div>
+                  <div class="input-secundario">
+                    <label for="event-end">Até</label>
+                    <input type="time" id="event-end" required>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>  
+      </fieldset> 
+    </form>
+    <footer>
+     <input class="button" type="submit" form="formulario" value="salvar">
+    </footer>
+  </div>
+</body>
+</html>
